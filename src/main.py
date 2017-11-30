@@ -1,4 +1,4 @@
-from tornado import ioloop, gen, web
+from tornado import ioloop, web
 import os.path
 from handlers.form import FormHandler
 from handlers.admin import AdminHandler
