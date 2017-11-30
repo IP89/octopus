@@ -1,0 +1,18 @@
+<html>
+   <head>
+      <link rel="stylesheet" href="{{ static_url('css/octopus.css') }}">
+      <script src="http://d3js.org/d3.v3.min.js"></script>
+      <script src="{{ static_url('d3.layout.cloud.js') }}"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="{{ static_url('script.js') }}" type="application/javascript"></script>
+      <title>{{ title }}</title>
+   </head>
+   <body>
+      <div id='input-info'>
+         <div class='t1'>URL:</div>
+         <div> <input id="url" type="text" placeholder="http://your.url"> </div>
+         <div class='button'><button id="submit-button">Go</button></div>
+      </div>
+      <div id="word-cloud"></div>
+   </body>
+ </html>

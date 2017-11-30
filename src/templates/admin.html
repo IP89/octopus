@@ -1,0 +1,14 @@
+<html>
+   <head>
+      <link rel="stylesheet" href="{{ static_url('css/octopus.css') }}">
+      <title>{{ title }}</title>
+   </head>
+   <body>
+      {% for word, count in words.items() %}
+      <div class='row'>
+         <div class='word'>The word <b>{{ word }}</b> appeared</div>
+         <div class='count'><b>{{ count }}</b> times</div>
+      </div>
+      {% end %}
+   </body>
+ </html>
