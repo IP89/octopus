@@ -1,4 +1,4 @@
-from tornado import ioloop, gen
+from tornado import ioloop
 from encryptions import *
 import MySQLdb
 
