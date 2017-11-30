@@ -39,3 +39,9 @@ run **mysql** and then:
 * Regarding _ The word itself is saved in a column that has asymmetrical encryption, and you are saving the encrypted version of the word._ I didn't get how/why using and RSA type authentication would be a good thing interacting with the DB. I ended up using a simple BASE64 authentication just because, I guess the point is to not have raw data (although this is clearly a less safe way).
 
 * About the hosting this on the cloud, I tried google cloud but when setting up the trial period google doesn't let me change the account type to Individual (only Company) and because of that I can't use it. If you have any ideas on what's happening I'm more than welcome to set it up there.
+
+## Securing keys
+
+First of all keys shouldn't be located in a public site and shouldn't be together with the data they decrypt.
+One solution is to store it in a config file (not tracked by git) and provide that file to everyone that needs to decrypt the data (devs, cloud servers, etc).
+Another solution is the use of something like an ICSF Key Management Tool that takes advantage of ICSF functionality provided by IBM.
