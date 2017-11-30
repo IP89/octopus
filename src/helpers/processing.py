@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 from bs4.element import Comment
 from collections import OrderedDict
 
+# The words / list processing is done here
 
 PREPOSITIONS = ["with", "at", "from", "into", "during", "including", "until",
     "against", "among", "throughout", "despite", "towards", "upon", "concerning", "to",

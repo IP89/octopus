@@ -3,6 +3,8 @@ from encryptions import *
 import MySQLdb
 
 
+# This helper interacts with the DB and will take care of inserting, updating, removing and fetching data
+
 def set_new_words(word_list):
     db = MySQLdb.connect(host="localhost", user="root", passwd="", db="octopus_db")
     ids = []

@@ -3,6 +3,7 @@ from helpers.processing import *
 import urllib2
 
 class Scrapper:
+    #This Class takes care of the scrapping functionality
     def __init__(self, url):
         self.url = url
 
